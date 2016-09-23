@@ -1,0 +1,60 @@
+<html>
+ <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+  <style>
+   body{
+   	background:url("http://www.ultrahighdefinitionwallpapers.com/wp-content/uploads/2015/04/Food-Full-4k-UHD-Wallpapers-72.jpg");
+   	background-size: 100% 100%;
+   }
+   p{
+   	background-color: black;
+   	border-color: black;
+   	opacity:.5;
+    color: white;
+    font-size: 90px;
+    font-family: "bauhaus 93";
+
+   }
+   div{
+   	   	background-color: black;
+   	border-color: black;
+   	opacity:.5;
+    color: white;
+    font-size: 20px;
+    font-family: "Arial";
+   }
+
+  </style>
+ </head>
+  <p>Nutricious Facts</p>
+
+ <body>
+  <div><button class="b123" id="b1" onclick="check1()">Nutrition Facts of Coffee</button></br></br><button class="b123" id="b2" onclick="check2()">Nutrition Facts of Steak</button></br></br><button class="b123" id="b3" onclick="check3()">Nutrition Facts of Hershey</button>    </div>
+  <script>
+       let Coffee= {
+     	nutritions: [" Calories:"+ 121," Total Fat:"+ 0+"g"," Sodium:"+ 1+"mg"," Sugar:"+ 45+"g"]};
+
+       let Steak= {
+     	nutritions: [" Calories:"+ 304," Total Fat:"+ 17+"g"," Sodium:"+ 0+"mg"," Sugar:"+ 3+"g"]};
+
+       let Hershey= {
+     	nutritions: ["Calories:"+ 72," Total Fat:"+ 9+"g"," Sodium:"+ 0+"mg"," Sugar:"+ 30+"g"]};
+
+       let Foods= [{Coffee},{Steak},{Hershey}];
+
+       console.log(Foods);
+
+       function check1(){
+         alert("Coffee Nutritions: " + Coffee.nutritions);
+      }
+       function check2(){
+         alert("Steak Nutritions: " + Steak.nutritions);
+
+      }
+       function check3(){
+         alert("Hershey Nutritions: " + Hershey.nutritions);
+
+      }
+  </script>
+ </body>
+</html>
