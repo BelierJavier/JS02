@@ -1,0 +1,61 @@
+<html>
+ 
+  <body>
+
+    
+
+  </body>
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  		<script>
+        	
+            var arr = [12,48,3,17,59,21];
+            var smallest = arr[0];
+            var largest = arr[0];
+            var total = 0;
+
+			function calculateStats(){
+
+			  //Finds the smallest int
+              for (i=0;i<arr.length;i++){
+				if(arr[i]<smallest){
+					smallest=arr[i];
+					}
+				}
+
+              //Finds the largest int
+			  for (i=0;i<arr.length;i++){
+				if(arr[i]>largest){
+					largest=arr[i];
+					}
+				}
+
+              //Finds the sum of the array
+			  for(var i = 0; i < arr.length; i++) {
+    			total += arr[i];
+					}
+           
+			};
+			
+			//Calls function
+            window.calculateStats();
+            
+	            //Divides sum by length for the average
+	            var avg = total / arr.length;
+
+ 				//Prints function answers
+	            console.log(arr);
+
+	            console.log("This is the smallest integer: " + smallest);
+
+	            console.log("This is the largest integer: " + largest);
+
+	            console.log("This is the sum of the array: " + total);
+
+	            console.log("This is the average of the array: " + Math.round(avg));
+
+  		</script>
+
+</html>
