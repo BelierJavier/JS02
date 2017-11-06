@@ -1,34 +1,28 @@
 <html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cloudboost.io/js-sdk/cloudboost.js"></script>
   <style>
-   body{
-   	background: blue;
-   }
+  body {
+    background: blue;
+  }
   </style>
-  <body>
-
-  	<center><span>Sign In</span></center>
-    <br>
-    <br>
-    <form method="post" name="Form" >
+</head>
+<body>
+  <center><span>Sign In</span></center>
+  <br/>
+  <br/>
+  <form method="post" name="Form">
     <span id="texter">Name:</span>
-       <center><input id="user" type="text" placeholder="John Smith"></center>
+    <center><input id="user" type="text" placeholder="John Smith"/></center>
+    <br/><br/>
 
-       <br>
-       <br>
+    <span id="texter">Password:</span>
+    <center><input id="pass" type="password" placeholder="pass123"/></center>
+    <br><br>
 
-       <span id="texter">Password:</span>
-       <center><input id="pass" type="password" placeholder="pass123"></center>
-       
-       <br>
-       <br>
-
-       <button onclick="login()" type="button" id="continue" ><span>Enter</span></button>
-    </form>
-  </body>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="https://cloudboost.io/js-sdk/cloudboost.js"></script>
-<script src="JSSS.js">
-
-</script>
-
+    <button onclick="login()" type="button" id="continue" ><span>Enter</span></button>
+  </form>
+  <script src="JSSS.js"></script>
+</body>
 </html>
